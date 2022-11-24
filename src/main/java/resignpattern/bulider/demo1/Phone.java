@@ -9,7 +9,7 @@ package resignpattern.bulider.demo1;
 public class Phone {
 
     private String CPU;
-    private String screen;
+    private final String screen;
     private String memory;
     private String mainBoard;
 

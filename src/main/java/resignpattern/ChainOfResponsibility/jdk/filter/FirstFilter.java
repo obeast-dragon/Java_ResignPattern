@@ -1,4 +1,9 @@
-package resignpattern.ChainOfResponsibility.jdk;
+package resignpattern.ChainOfResponsibility.jdk.filter;
+
+import resignpattern.ChainOfResponsibility.jdk.FilterChain;
+import resignpattern.ChainOfResponsibility.jdk.Request;
+import resignpattern.ChainOfResponsibility.jdk.Response;
+
 public class FirstFilter implements Filter {
     public void doFilter(Request req, Response res, FilterChain chain) {
         System.out.println("过滤器1 前置处理");

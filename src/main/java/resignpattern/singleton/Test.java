@@ -7,17 +7,32 @@ package resignpattern.singleton;
  * @date 2021/12/25 8:47
  */
 public class Test {
+//    public static void main(String[] args) {
+//        for (int i = 0; i < 1000; i++) {
+//            new Thread(() -> {
+//                try {
+//                    System.out.println(Mg08.INSTANCE.hashCode());
+//                } catch (Exception e) {
+//                    e.printStackTrace();
+//                }
+//            }).start();
+//        }
+//    }
+
     public static void main(String[] args) {
+
         for (int i = 0; i < 1000; i++) {
             new Thread(() -> {
                 try {
-                    System.out.println(Mg08.INSTANCE.hashCode());
+                    Mg00 mg00 = new Mg00();
+                    System.out.println(mg00.hashCode());
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
             }).start();
         }
     }
+
 }
     //enum反编码的样子
 /**

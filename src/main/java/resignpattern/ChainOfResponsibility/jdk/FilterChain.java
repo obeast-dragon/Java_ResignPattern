@@ -1,5 +1,7 @@
 
 package resignpattern.ChainOfResponsibility.jdk;
+import resignpattern.ChainOfResponsibility.jdk.filter.Filter;
+
 import java.util.ArrayList;
 import java.util.List;
 

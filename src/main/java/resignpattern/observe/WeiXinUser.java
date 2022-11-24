@@ -14,6 +14,10 @@ public class WeiXinUser implements Observer{
         this.name = name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
     @Override
     public void update(String message) {
         System.out.println(name + "-" + message);
